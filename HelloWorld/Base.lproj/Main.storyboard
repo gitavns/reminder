@@ -43,16 +43,6 @@
                                     <segue destination="VtK-a7-lWI" kind="show" id="3Kd-ey-wxw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="va6-k6-UCn">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Ashton Kutcher" backgroundImage="ashton-kutcher"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="13" y="308" width="161" height="99"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="q4g-2p-aVv" kind="show" id="26a-3f-z3J"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKt-dm-gwc">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Paul Rudd" backgroundImage="paul-rudd-6"/>
@@ -73,22 +63,31 @@
                                     <segue destination="9Db-eE-ZIm" kind="show" id="Aj9-mw-dep"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAW-Zf-Hzf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Ryan Gosling" backgroundImage="Ryan-Gosling">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="13" y="309" width="165" height="102"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="aM4-3k-WEi"/>
-                                <exclude reference="va6-k6-UCn"/>
                                 <exclude reference="mKt-dm-gwc"/>
                                 <exclude reference="m2H-92-Ltn"/>
+                                <exclude reference="jAW-Zf-Hzf"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
                                 <include reference="aM4-3k-WEi"/>
-                                <include reference="va6-k6-UCn"/>
                                 <include reference="mKt-dm-gwc"/>
                                 <include reference="m2H-92-Ltn"/>
+                                <include reference="jAW-Zf-Hzf"/>
                             </mask>
                         </variation>
                     </view>
@@ -111,34 +110,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ashton-kutcher" translatesAutoresizingMaskIntoConstraints="NO" id="7Sf-kf-DD8">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="14" y="86" width="317" height="202"/>
-                                </variation>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SjS-nW-uGL">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Christopher Ashton Kutcher is an American actor, producer, investor and former model. Kutcher began his career as a model. He began his acting career portraying Michael Kelso in the Fox sitcom That '70s Show, which aired for eight seasons.</string>
+                                <string key="text">Ryan Thomas Gosling is a Canadian actor, musician, and producer. He began his career as a child star on the Disney Channel's Mickey Mouse Club and went on to appear in other family entertainment programs.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="20" y="345" width="264" height="150"/>
                                 </variation>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ryan-Gosling" translatesAutoresizingMaskIntoConstraints="NO" id="bva-jE-65j">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="139" width="240" height="154"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="7Sf-kf-DD8"/>
                                 <exclude reference="SjS-nW-uGL"/>
+                                <exclude reference="bva-jE-65j"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
-                                <include reference="7Sf-kf-DD8"/>
                                 <include reference="SjS-nW-uGL"/>
+                                <include reference="bva-jE-65j"/>
                             </mask>
                         </variation>
                     </view>
@@ -305,6 +304,7 @@
                         <viewControllerLayoutGuide type="bottom" id="sHa-Aw-WNI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gs4-ZT-8Vm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -335,7 +335,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ashton-kutcher" width="1600" height="1200"/>
+        <image name="Ryan-Gosling" width="2197" height="1463"/>
         <image name="bradley-cooper-3" width="1180" height="842"/>
         <image name="gerard-butler" width="1920" height="1080"/>
         <image name="paul-rudd-6" width="1600" height="1200"/>
