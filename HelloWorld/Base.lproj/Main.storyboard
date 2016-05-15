@@ -71,6 +71,9 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="13" y="309" width="165" height="102"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="q4g-2p-aVv" kind="show" id="DBo-K2-joV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
